@@ -85,7 +85,7 @@
             	<div class="pm-sub-header-title-bg">
                 
                 	<p class="pm-sub-header-title">schedules</p>
-                	<p class="pm-sub-header-message">browse our upcoming classes &amp; programs</p>
+                	<p class="pm-sub-header-message">FIND YOUR CUTOMIZED PLAN</p>
                 
                 </div>
                 
@@ -110,274 +110,25 @@
         
         <!-- PANEL 1 -->
         <div class="container pm-containerPadding-bottom-30">
-        
-        	<div class="row">
-            
-            	<div class="col-lg-12">
-                	
-                    <ul class="pm-filter-system">
-                    	<li>
-                        	<p>Week of "Jan 18 - 25"</p>
-                        </li>
-                        <li>
-                        	<div class="pm-dropdown pm-filter-system">
-                                <div class="pm-dropmenu">
-                                    <p class="pm-menu-title">Filter by week</p>
-                                    <i class="fa fa-angle-down"></i>
-                                </div>
-                                <div class="pm-dropmenu-active" style="display: none;">
-                                    <ul>
-                                       <li><a href="#">Jan 26 - Feb 2</a></li>
-                                       <li><a href="#">Feb 2 - Feb 8</a></li>
-                                       <li><a href="#">Feb 8 - Feb 14</a></li>
-                                       <li><a href="#">Feb 14 - Feb 21</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="form-group">
+                <?php echo form_open('workoutassign'); ?>
+                <h1>Workoutassignform</h1>
+                <div class="input-group">
+                    <span class="input-group-addon">Workout</span>
+                    <?php echo form_input(array('id' => 'wokrout', 'name' => 'workout', 'class'=>'form-control'))."<br>"; ?>
                     
+                </div><br>
+                <div class="input-group">
+                    <span class="input-group-addon">Description</span>
+                    
+                    <?php echo form_input(array('id' => 'description', 'name' => 'description', 'class'=>'form-control'))."<br>"; ?>
+                    
+                </div><br>
+                    <?php echo form_submit(array('id' => 'submit', 'value' => 'Submit', 'class'=>'pm-mailchimp-submit')); ?><br>
+                    <?php echo form_close(); ?>
                 </div>
-            
-            </div>
-        
-        </div>
-        <!-- PANEL 1 end -->
-        
-        <!-- PANEL 2 -->
-        <div class="container pm-containerPadding-bottom-60">
-        
-        	<div class="row">
-            
-            	<!-- Schedule post 1 -->
-            	<div class="col-lg-4 col-md-6 col-sm-12">
-                	
-                    <div class="pm-schedule-post-container" style="background-image:url(img/schedules/post1.jpg);">
-                    
-                    	<a href="#" class="pm-schedule-post-expand-btn fa fa-chevron-up"></a>
-                    
-                    	<div class="pm-schedule-post-info-container">
-                        	
-                            <div class="pm-schedule-post-info">
-                            	
-                                <p class="title">power training</p>
-                                <p class="time">6:30pm - 9:00pm / Studio A</p>
-                                
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt tincidunt sapien, quis ultrices metus vestibulum ac <a href="#">[...]</a></p>
-                                
-                                <a href="#" class="pm-square-btn schedule-btn">Learn more</a>
-                                
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="pm-schedule-post-diamond-shadow"></div>
-                    	<div class="pm-schedule-post-diamond"></div>
-                        <div class="pm-schedule-post-date">
-                        	<p class="month">feb</p>
-							<p class="day">05</p>
-                        </div>
-                    
-                    </div>                    
-                    
-                </div>
-                <!-- Schedule post 1 end -->
+
                 
-                <!-- Schedule post 2 -->
-            	<div class="col-lg-4 col-md-6 col-sm-12">
-                	
-                    <div class="pm-schedule-post-container" style="background-image:url(img/schedules/post2.jpg);">
-                    
-                    	<a href="#" class="pm-schedule-post-expand-btn fa fa-chevron-up"></a>
-                    
-                    	<div class="pm-schedule-post-info-container">
-                        	
-                            <div class="pm-schedule-post-info">
-                            	
-                                <p class="title">cycling</p>
-                                <p class="time">6:30pm - 9:00pm / Studio B</p>
-                                
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt tincidunt sapien, quis ultrices metus vestibulum ac <a href="#">[...]</a></p>
-                                
-                                <a href="#" class="pm-square-btn schedule-btn">Learn more</a>
-                                
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="pm-schedule-post-diamond-shadow"></div>
-                    	<div class="pm-schedule-post-diamond"></div>
-                        <div class="pm-schedule-post-date">
-                        	<p class="month">feb</p>
-							<p class="day">05</p>
-                        </div>
-                    
-                    </div>                    
-                    
-                </div>
-                <!-- Schedule post 2 end -->
-                
-                <!-- Schedule post 3 -->
-            	<div class="col-lg-4 col-md-6 col-sm-12">
-                	
-                    <div class="pm-schedule-post-container" style="background-image:url(img/schedules/post3.jpg);">
-                    
-                    	<a href="#" class="pm-schedule-post-expand-btn fa fa-chevron-up"></a>
-                    
-                    	<div class="pm-schedule-post-info-container">
-                        	
-                            <div class="pm-schedule-post-info">
-                            	
-                                <p class="title">kickboxing</p>
-                                <p class="time">7:30pm - 8:30pm / Studio C</p>
-                                
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt tincidunt sapien, quis ultrices metus vestibulum ac <a href="#">[...]</a></p>
-                                
-                                <a href="#" class="pm-square-btn schedule-btn">Learn more</a>
-                                
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="pm-schedule-post-diamond-shadow"></div>
-                    	<div class="pm-schedule-post-diamond"></div>
-                        <div class="pm-schedule-post-date">
-                        	<p class="month">feb</p>
-							<p class="day">05</p>
-                        </div>
-                    
-                    </div>                    
-                    
-                </div>
-                <!-- Schedule post 3 end -->
-                
-                <!-- Schedule post 4 -->
-            	<div class="col-lg-4 col-md-6 col-sm-12">
-                	
-                    <div class="pm-schedule-post-container" style="background-image:url(img/schedules/post4.jpg);">
-                    
-                    	<a href="#" class="pm-schedule-post-expand-btn fa fa-chevron-up"></a>
-                    
-                    	<div class="pm-schedule-post-info-container">
-                        	
-                            <div class="pm-schedule-post-info">
-                            	
-                                <p class="title">core training</p>
-                                <p class="time">6:30pm - 9:00pm / Studio A</p>
-                                
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt tincidunt sapien, quis ultrices metus vestibulum ac <a href="#">[...]</a></p>
-                                
-                                <a href="#" class="pm-square-btn schedule-btn">Learn more</a>
-                                
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="pm-schedule-post-diamond-shadow"></div>
-                    	<div class="pm-schedule-post-diamond"></div>
-                        <div class="pm-schedule-post-date">
-                        	<p class="month">feb</p>
-							<p class="day">06</p>
-                        </div>
-                    
-                    </div>                    
-                    
-                </div>
-                <!-- Schedule post 4 end -->
-                
-                <!-- Schedule post 5 -->
-            	<div class="col-lg-4 col-md-6 col-sm-12">
-                	
-                    <div class="pm-schedule-post-container" style="background-image:url(img/schedules/post5.jpg);">
-                    
-                    	<a href="#" class="pm-schedule-post-expand-btn fa fa-chevron-up"></a>
-                    
-                    	<div class="pm-schedule-post-info-container">
-                        	
-                            <div class="pm-schedule-post-info">
-                            	
-                                <p class="title">yoga</p>
-                                <p class="time">7:30pm - 8:30pm / Studio B</p>
-                                
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt tincidunt sapien, quis ultrices metus vestibulum ac <a href="#">[...]</a></p>
-                                
-                                <a href="#" class="pm-square-btn schedule-btn">Learn more</a>
-                                
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="pm-schedule-post-diamond-shadow"></div>
-                    	<div class="pm-schedule-post-diamond"></div>
-                        <div class="pm-schedule-post-date">
-                        	<p class="month">feb</p>
-							<p class="day">06</p>
-                        </div>
-                    
-                    </div>                    
-                    
-                </div>
-                <!-- Schedule post 5 end -->
-                
-                <!-- Schedule post 6 -->
-            	<div class="col-lg-4 col-md-6 col-sm-12">
-                	
-                    <div class="pm-schedule-post-container" style="background-image:url(img/schedules/post6.jpg);">
-                    
-                    	<a href="#" class="pm-schedule-post-expand-btn fa fa-chevron-up"></a>
-                    
-                    	<div class="pm-schedule-post-info-container">
-                        	
-                            <div class="pm-schedule-post-info">
-                            	
-                                <p class="title">cardio training</p>
-                                <p class="time">8:00pm - 9:00pm / Studio C</p>
-                                
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt tincidunt sapien, quis ultrices metus vestibulum ac <a href="#">[...]</a></p>
-                                
-                                <a href="#" class="pm-square-btn schedule-btn">Learn more</a>
-                                
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="pm-schedule-post-diamond-shadow"></div>
-                    	<div class="pm-schedule-post-diamond"></div>
-                        <div class="pm-schedule-post-date">
-                        	<p class="month">feb</p>
-							<p class="day">06</p>
-                        </div>
-                    
-                    </div>                    
-                    
-                </div>
-                <!-- Schedule post 6 end -->
-                                
-            </div>
-        
-        </div>
-        <!-- PANEL 2 end -->
-        
-        <!-- PANEL 3 -->
-        <div class="container pm-containerPadding-bottom-80">
-        
-        	<div class="row">
-            
-            	<div class="col-lg-12">
-                	
-                    <ul class="pm-post-loaded-info">
-                    	<li>
-                        	<p>viewing 4 of 19</p>
-                        </li>
-                        <li>
-                        	<a href="#">Load more &nbsp; <i class="fa fa-cloud-download"></i></a>
-                        </li>
-                    </ul>
-                    
-                </div>
-            
-            </div>
-        
         </div>
         
         <!-- PANEL 3 end -->
@@ -385,76 +136,7 @@
         
         <!-- BODY CONTENT end -->
         
-        <div class="pm-fat-footer pm-parallax-panel" data-stellar-background-ratio="0.5">
-        	
-            <div class="container">
-                <div class="row">
-                
-                    <div class="col-lg-4 col-md-4 col-sm-12 pm-widget-footer">
-                    
-                    	<p class="pm-fat-footer-sub-title">stay up to date</p>
-                    	<h6 class="pm-fat-footer-title">subscribe to our newsletter</h6>
-                        <div class="pm-fat-footer-title-divider"></div>
-                        
-                        <p>Receive weekly e-mail notifications from Energy Fitness and stay up to date on news, events and specials classes.</p>
-                        
-                        <br />
-                        
-                        <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        
-                        	<input name="MERGE1" type="text" class="pm-mailchimp-field reset-pulse-sizing" id="MERGE1" placeholder="first name">
-                            
-							<input name="MERGE0" type="email" class="pm-mailchimp-field reset-pulse-sizing" id="MERGE0" placeholder="email address">
-                            
-							<input name="subscribe" id="mc-embedded-subscribe" type="submit" value="subscribe" class="pm-mailchimp-submit">
-                        
-                        </form>
-                        
-                        <p class="pm-center"><a href="#">Click here</a> to unsubscribe</p>
-                        
-                    </div>
-                    
-                    
-                    <div class="col-lg-4 col-md-4 col-sm-12 pm-widget-footer">
-                    
-                        <p class="pm-fat-footer-sub-title">follow @energyfitness</p>
-                    	<h6 class="pm-fat-footer-title">our latest tweets</h6>
-                        <div class="pm-fat-footer-title-divider"></div>
-                        
-                        <div id="pm-twitter-news" class="pm-tweet-list"></div>
-                        
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-4 col-sm-12 pm-widget-footer">
-                    
-                        <p class="pm-fat-footer-sub-title">fueling the fire</p>
-                    	<h6 class="pm-fat-footer-title">latest from our gallery</h6>
-                        <div class="pm-fat-footer-title-divider"></div>
-                        
-                        <ul class="pm-gallery-widget-items">
-                        	<li style="background-image:url(img/gallery-widget/img1.jpg);">
-                            	<a href="img/gallery-widget/img1-lg.jpg" data-rel="prettyPhoto[gallery-widget]" class="pm-gallery-widget-item-expand fa fa-expand expand lightbox"></a>
-                            </li>
-                            <li style="background-image:url(img/gallery-widget/img2.jpg);">
-                            	<a href="img/gallery-widget/img2-lg.jpg" data-rel="prettyPhoto[gallery-widget]" class="pm-gallery-widget-item-expand fa fa-expand expand lightbox"></a>
-                            </li>
-                            <li style="background-image:url(img/gallery-widget/img3.jpg);">
-                            	<a href="img/gallery-widget/img3-lg.jpg" data-rel="prettyPhoto[gallery-widget]" class="pm-gallery-widget-item-expand fa fa-expand expand lightbox"></a>
-                            </li>
-                            <li style="background-image:url(img/gallery-widget/img4.jpg);">
-                            	<a href="img/gallery-widget/img4-lg.jpg" data-rel="prettyPhoto[gallery-widget]" class="pm-gallery-widget-item-expand fa fa-expand expand lightbox"></a>
-                            </li>
-                        </ul>
-                        
-                        <br />
-                        
-                        <p class="pm-right-align"><a href="gallery.html" class="pm-gallery-widget-view-more">View Gallery &nbsp;<i class="fa fa-angle-right"></i></a></p>
-                        
-                    </div>
-                </div>	
-            </div>
-            
-        </div>
+        
         
         <footer>
 
@@ -503,7 +185,7 @@
                 <div class="row">
                     <div class="col-lg-12 pm-footer-copyright-col">
                     	<a href=""><img src="img/energy-fitness.png" class="img-responsive pm-header-logo" alt="Energy Fitness Studio"></a> 
-                        <p>© 2014 Energy - Designed &amp; Developed by <a href="www.pulsarmedia.ca/" target="_blank">Pulsar Media</a></p>
+                        
                     </div>
                 </div>
             </div>
@@ -541,5 +223,5 @@
     
   </body>
 
-<!-- Mirrored from projects.pulsarmedia.ca/energy/schedules.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Nov 2016 13:44:52 GMT -->
+
 </html>
